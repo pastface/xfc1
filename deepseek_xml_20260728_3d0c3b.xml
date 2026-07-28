@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <ImageView
+        android:id="@+id/float_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:contentDescription="悬浮图片" />
+
+    <LinearLayout
+        android:id="@+id/control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#aa000000"
+        android:padding="4dp"
+        android:gravity="center_vertical">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:progress="255" />
+
+        <Button
+            android:id="@+id/btn_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔒 锁定"
+            android:textSize="12sp" />
+    </LinearLayout>
+</FrameLayout>
